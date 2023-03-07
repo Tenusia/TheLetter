@@ -1886,19 +1886,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00000016292068
+      value: 0.7071057
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.70710796
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1906,7 +1906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -270
       objectReference: {fileID: 0}
     - target: {fileID: 1134398319813934771, guid: 8a296ac5ce9116247a183e7b5ffb9bc6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1921,22 +1921,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3126145880745430020, guid: 125367c76d453e94995a98f70986022e, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1036627895}
     - target: {fileID: 7187000023279376740, guid: 125367c76d453e94995a98f70986022e, type: 3}
       propertyPath: m_Name
       value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7187000023279376747, guid: 125367c76d453e94995a98f70986022e, type: 3}
-      propertyPath: m_StoppingDistance
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7187000023279376750, guid: 125367c76d453e94995a98f70986022e, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1036627895}
-    - target: {fileID: 7187000023279376750, guid: 125367c76d453e94995a98f70986022e, type: 3}
-      propertyPath: chaseRange
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7187000023279376751, guid: 125367c76d453e94995a98f70986022e, type: 3}
       propertyPath: m_RootOrder
       value: 3
