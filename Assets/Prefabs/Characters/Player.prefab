@@ -233,9 +233,11 @@ GameObject:
   - component: {fileID: 4327203699770808931}
   - component: {fileID: 1790412948991876076}
   - component: {fileID: -4779103820535970069}
+  - component: {fileID: 1366529379}
+  - component: {fileID: 3571110106137481900}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  healthBar: {fileID: 0}
 --- !u!114 &1790412948991876076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -400,6 +403,32 @@ MonoBehaviour:
     ammoAmount: 10
   - ammoType: 2
     ammoAmount: 5
+--- !u!114 &1366529379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327203700880500754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d0735e698c425342a61fb6d44fc134d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageCanvas: {fileID: 0}
+  displayTime: 2
+--- !u!114 &3571110106137481900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4327203700880500754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba75b5049d192641b5e7b8a914bb411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4019104576714878784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -413,7 +442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 743095005807736041, guid: 059376364199cbe47bcb52fe0dbef967, type: 3}
       propertyPath: damage
-      value: 10
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 743095005807736041, guid: 059376364199cbe47bcb52fe0dbef967, type: 3}
       propertyPath: FPCamera
