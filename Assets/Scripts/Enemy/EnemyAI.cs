@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 {
     [SerializeField] float chaseRange = 10f;
     [SerializeField] float turnSpeed = 5f;
+    [SerializeField] private AudioClip[] zombiePassiveClips;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
@@ -37,18 +38,21 @@ public class EnemyAI : MonoBehaviour
         }
         else if (distanceToTarget <= chaseRange)
         {
+            SoundFXManager.instance.PlayRandomSoundFXCLip(zombiePassiveClips, transform, 1f);
             isProvoked = true;
         }
     }
 
     public void OnDamageTaken()
     {   
+        SoundFXManager.instance.PlayRandomSoundFXCLip(zombiePassiveClips, transform, 1f);
         isProvoked = true;
     }
 
     void EngageTarget()
     {
-        FaceTarget();        
+        FaceTarget();
+
         if (distanceToTarget >= navMeshAgent.stoppingDistance)
         {
             ChaseTarget();
@@ -64,6 +68,7 @@ public class EnemyAI : MonoBehaviour
     {
         GetComponent<Animator>().SetBool("attack", false);
         GetComponent<Animator>().SetTrigger("move");
+        
         if (navMeshAgent.isActiveAndEnabled) 
         {
             navMeshAgent.SetDestination(target.position);

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3256397749305215504}
   - component: {fileID: 5610953334766042712}
   - component: {fileID: 6786096113254189494}
+  - component: {fileID: 7424374712996103615}
   m_Layer: 0
   m_Name: Ammo Pickup
   m_TagString: Untagged
@@ -60,3 +61,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ammoAmount: 5
   ammoType: 0
+  itemPickUpClip: {fileID: 8300000, guid: 16eb26aa3b10be24992f8aae1b82174b, type: 3}
+--- !u!95 &7424374712996103615
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3256397749305215507}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5c2632d57ec2eda4fb0606a4baf03cd2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

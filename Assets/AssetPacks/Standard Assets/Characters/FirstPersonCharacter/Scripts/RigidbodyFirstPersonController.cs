@@ -117,6 +117,15 @@ namespace UnityStandardAssets.Characters.FirstPerson
             }
         }
 
+        [SerializeField] private AudioClip[] jumpingSoundClips;
+        [SerializeField] private AudioClip[] walkingSoundsClips;
+        AudioSource audioSource;
+
+        private void Awake() {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.enabled = false;
+        }
+
 
         private void Start()
         {
@@ -148,6 +157,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
                 Vector3 desiredMove = cam.transform.forward*input.y + cam.transform.right*input.x;
                 desiredMove = Vector3.ProjectOnPlane(desiredMove, m_GroundContactNormal).normalized;
 
+                // audioSource.enabled = true;
                 desiredMove.x = desiredMove.x*movementSettings.CurrentTargetSpeed;
                 desiredMove.z = desiredMove.z*movementSettings.CurrentTargetSpeed;
                 desiredMove.y = desiredMove.y*movementSettings.CurrentTargetSpeed;
@@ -161,9 +171,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
             if (m_IsGrounded)
             {
                 m_RigidBody.drag = 5f;
-
+                
                 if (m_Jump)
                 {
+                    SoundFXManager.instance.PlayRandomSoundFXCLip(jumpingSoundClips, transform, 1f);
                     m_RigidBody.drag = 0f;
                     m_RigidBody.velocity = new Vector3(m_RigidBody.velocity.x, 0f, m_RigidBody.velocity.z);
                     m_RigidBody.AddForce(new Vector3(0f, movementSettings.JumpForce, 0f), ForceMode.Impulse);
@@ -172,11 +183,13 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
                 if (!m_Jumping && Mathf.Abs(input.x) < float.Epsilon && Mathf.Abs(input.y) < float.Epsilon && m_RigidBody.velocity.magnitude < 1f)
                 {
+                    audioSource.enabled = false;
                     m_RigidBody.Sleep();
                 }
             }
             else
             {
+                
                 m_RigidBody.drag = 0f;
                 if (m_PreviouslyGrounded && !m_Jumping)
                 {

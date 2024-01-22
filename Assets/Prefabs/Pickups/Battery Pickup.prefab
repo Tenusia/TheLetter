@@ -143,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restoreAngleAmount: 50
   restoreIntensityAmount: 2
+  itemPickUpClip: {fileID: 8300000, guid: 669b6733e5410a84ba9ca53e0080da3c, type: 3}
 --- !u!135 &835350177074113205
 SphereCollider:
   m_ObjectHideFlags: 0

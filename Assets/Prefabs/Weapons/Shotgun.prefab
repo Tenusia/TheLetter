@@ -143,6 +143,12 @@ MonoBehaviour:
   ammoSlot: {fileID: 0}
   ammoType: 1
   shootingDelay: 2
+  ammoText: {fileID: 0}
+  weaponFireClips:
+  - {fileID: 8300000, guid: 5067a14100753d249823f42cf890e632, type: 3}
+  - {fileID: 8300000, guid: 26321eeafb91a454e9b2348efbf1e91a, type: 3}
+  - {fileID: 8300000, guid: 7b1435f2a1c75104bb914b62f43b0f5c, type: 3}
+  - {fileID: 8300000, guid: 49a549ddd6165e349a93dfd6f6d64a10, type: 3}
 --- !u!1 &3959138784352744274
 GameObject:
   m_ObjectHideFlags: 0

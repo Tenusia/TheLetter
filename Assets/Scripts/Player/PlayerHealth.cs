@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
+    [SerializeField] private AudioClip[] playerHurtClips;
     private float maxHealth;
     public HealthBar healthBar;
 
@@ -16,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
     public void TakePlayerDamage(float damage)
     {
         hitPoints -= damage;
+        SoundFXManager.instance.PlayRandomSoundFXCLip(playerHurtClips, transform, 1f);
         healthBar.SetHealth(hitPoints);
 
         if (hitPoints <= 0)

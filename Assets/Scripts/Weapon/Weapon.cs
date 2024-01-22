@@ -16,6 +16,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] AmmoType ammoType;
     [SerializeField] float shootingDelay = 0.5f;
     [SerializeField] TextMeshProUGUI ammoText;
+    [SerializeField] private AudioClip[] weaponFireClips;
     bool canShoot = true;
 
     void OnEnable() 
@@ -31,7 +32,6 @@ public class Weapon : MonoBehaviour
         {
             StartCoroutine(Shoot());
         }
-       
     }
 
     void DisplayAmmo()
@@ -45,6 +45,7 @@ public class Weapon : MonoBehaviour
         canShoot = false;
         if (ammoSlot.GetCurrentAmmo(ammoType) > 0)
         {
+            SoundFXManager.instance.PlayRandomSoundFXCLip(weaponFireClips, transform, 1f);
             PlayMuzzleFlash();
             ProcessRaycast();
             ammoSlot.ReduceCurrentAmmo(ammoType);           

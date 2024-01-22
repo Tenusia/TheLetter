@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/LetterScreen.unity
+    guid: c3a5f60219966bb4981e707339196fa3
+  - enabled: 1
     path: Assets/Scenes/Prison.unity
     guid: 81f421b9fda731c4994dadd6f7f77381
   m_configObjects: {}

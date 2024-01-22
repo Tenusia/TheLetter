@@ -109,7 +109,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 6
+  m_StoppingDistance: 5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -131,6 +131,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chaseRange: 15
   turnSpeed: 5
+  zombiePassiveClips:
+  - {fileID: 8300000, guid: 016540e4fe3101a41af54242ac9b57b3, type: 3}
+  - {fileID: 8300000, guid: dad77530a0a6aaa4883fb6a5f3c5ee46, type: 3}
+  - {fileID: 8300000, guid: 507da132189db90498b4724a6a031980, type: 3}
+  - {fileID: 8300000, guid: 4fedf6849c5d1ff4f8bc89c59f71abe6, type: 3}
+  - {fileID: 8300000, guid: 8e38f95c6010aae43b40c89489fcbbc8, type: 3}
+  - {fileID: 8300000, guid: 4314d5f626b122143ab1140922d442e4, type: 3}
+  - {fileID: 8300000, guid: 2f687471e403aaf4cbdbf477aa651fcc, type: 3}
+  - {fileID: 8300000, guid: 7b2881ce7741eb644b62c700de476518, type: 3}
+  - {fileID: 8300000, guid: e3a22328ef11497428b2aad876f825d3, type: 3}
 --- !u!95 &8895218731516673073
 Animator:
   serializedVersion: 4
@@ -164,6 +174,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitPoints: 100
+  zombieHurtClips:
+  - {fileID: 8300000, guid: add5504238356dc478c576c99287a56f, type: 3}
+  - {fileID: 8300000, guid: 4961690229e863f4a8b7817adf418107, type: 3}
+  - {fileID: 8300000, guid: 270d32ee4dfb5744b99229d714eccbac, type: 3}
+  - {fileID: 8300000, guid: 05328ca3e6ada224a91a667d6c8064c9, type: 3}
+  - {fileID: 8300000, guid: 829462475b31c304c80c80ddd5ed7553, type: 3}
+  - {fileID: 8300000, guid: cca07a10a37d1604c91a718ba3080aea, type: 3}
+  - {fileID: 8300000, guid: e0b8c5867e177e94b9f183d375b5f3e3, type: 3}
+  - {fileID: 8300000, guid: e853cb6e966b73a4fa8e4ae988975a11, type: 3}
+  zombieDieClips:
+  - {fileID: 8300000, guid: 91d34b6bcd833e945bc5f91171605312, type: 3}
+  - {fileID: 8300000, guid: f70894725273c5c43af0e98e72fb54dc, type: 3}
+  - {fileID: 8300000, guid: 4d52cf41244603b43b66f419cf95d47a, type: 3}
+  - {fileID: 8300000, guid: 945d1e54bdfbf5c4c886a6c2f70e5e33, type: 3}
+  - {fileID: 8300000, guid: 6d4ae002f56fb9449a8f162de747d848, type: 3}
 --- !u!114 &3126145880745430020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,7 +201,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b028cfdf2a074c248bda734c0369bde3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 40
+  damage: 30
+  zombieAttackClips:
+  - {fileID: 8300000, guid: bb7ba669383fa43428ab37b4af981438, type: 3}
+  - {fileID: 8300000, guid: d79f3a285fa36254aaaf89eb7995fbea, type: 3}
+  - {fileID: 8300000, guid: 473f7c0b2b195e546ac32ab9c70c01a0, type: 3}
+  - {fileID: 8300000, guid: 84d20b2a36c47d540960fca12821558f, type: 3}
+  - {fileID: 8300000, guid: 8d24660a282a94741a840ed9d1a8f608, type: 3}
+  - {fileID: 8300000, guid: b5020c700adcda84a849c8cabe6e228f, type: 3}
+  playerHitClips:
+  - {fileID: 8300000, guid: f7dd98e998aeccd4086bea69f5601cd3, type: 3}
+  - {fileID: 8300000, guid: ac38b84483fb58c4fa9b8c09d15b7d20, type: 3}
+  - {fileID: 8300000, guid: 55e7341c95a95354f8685830e49a4522, type: 3}
+  - {fileID: 8300000, guid: 30700a6910c957141a98bbeff1badc05, type: 3}
 --- !u!1001 &4134199971861239955
 PrefabInstance:
   m_ObjectHideFlags: 0

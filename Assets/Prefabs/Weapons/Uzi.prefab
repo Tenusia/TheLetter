@@ -144,6 +144,11 @@ MonoBehaviour:
   ammoType: 0
   shootingDelay: 0.5
   ammoText: {fileID: 0}
+  weaponFireClips:
+  - {fileID: 8300000, guid: bf05fd2b7d56ad445b3e8d9cfd195d77, type: 3}
+  - {fileID: 8300000, guid: 2aec1e31e9c8c6c41a8776eff27b1e44, type: 3}
+  - {fileID: 8300000, guid: 763e1a353a2c12d4aac7fcf567a551b9, type: 3}
+  - {fileID: 8300000, guid: ee1b926da64197a4390ea63fc14f1f7a, type: 3}
 --- !u!1 &3959138784352744274
 GameObject:
   m_ObjectHideFlags: 0

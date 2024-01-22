@@ -6,7 +6,8 @@ using UnityEngine;
 public class KeyHolder : MonoBehaviour
 {
     public event EventHandler OnKeysChanged;
-    
+    [SerializeField] private AudioClip itemPickUpClip;
+
     private List<Key.KeyType> keyList;
 
     private void Awake() {
@@ -18,7 +19,7 @@ public class KeyHolder : MonoBehaviour
     }
 
     public void AddKey(Key.KeyType keyType) {
-        Debug.Log("Added key: " + keyType);
+        SoundFXManager.instance.PlaySoundFXCLip(itemPickUpClip, transform, 1f);
         keyList.Add(keyType);
         OnKeysChanged?.Invoke(this, EventArgs.Empty);
     }

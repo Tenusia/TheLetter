@@ -46,8 +46,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8, y: 0.9, z: 1.6}
-  m_Center: {x: 0.13, y: 0.44, z: 0.03}
+  m_Size: {x: 1.3898181, y: 1.2196145, z: 1.958488}
+  m_Center: {x: 0.20040758, y: 0.442263, z: 0.04228282}
 --- !u!114 &6483513790849984895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,6 +61,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restoreHealthAmount: 50
+  itemPickUpClip: {fileID: 8300000, guid: 16eb26aa3b10be24992f8aae1b82174b, type: 3}
 --- !u!95 &-2989486219839226639
 Animator:
   serializedVersion: 4
