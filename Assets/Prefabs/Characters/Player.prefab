@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e0c10c023a585469cb10b57709e9a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 100000
   playerHurtClips:
   - {fileID: 8300000, guid: 150d2e4233e85cd4b9caf749d24f858c, type: 3}
   - {fileID: 8300000, guid: 8cceee42d1ccac042853a238040f15bf, type: 3}
