@@ -9,6 +9,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] float chaseRange = 10f;
     [SerializeField] float turnSpeed = 5f;
     [SerializeField] private AudioClip[] zombiePassiveClips;
+    // [SerializeField] Animator animator;
 
     NavMeshAgent navMeshAgent;
     float distanceToTarget = Mathf.Infinity;
@@ -67,6 +68,7 @@ public class EnemyAI : MonoBehaviour
     void ChaseTarget()
     {
         GetComponent<Animator>().SetBool("attack", false);
+        // animator.SetTrigger("move");
         GetComponent<Animator>().SetTrigger("move");
         
         if (navMeshAgent.isActiveAndEnabled) 
